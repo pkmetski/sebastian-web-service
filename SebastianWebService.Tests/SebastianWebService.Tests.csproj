@@ -66,6 +66,12 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SebastianWebService\SebastianWebService.csproj">
+      <Project>{9C77C22A-EEA6-4F8D-9574-DB72F4157FA7}</Project>
+      <Name>SebastianWebService</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
