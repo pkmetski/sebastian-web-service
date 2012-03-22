@@ -1,0 +1,8 @@
+D:\CBD\trunk\SebastianFrontEnd\bin\Debug\SebastianFrontEnd.exe
+D:\CBD\trunk\SebastianFrontEnd\bin\Debug\SebastianFrontEnd.pdb
+D:\CBD\trunk\SebastianFrontEnd\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\CBD\trunk\SebastianFrontEnd\obj\x86\Debug\SebastianFrontEnd.Properties.Resources.resources
+D:\CBD\trunk\SebastianFrontEnd\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\CBD\trunk\SebastianFrontEnd\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\CBD\trunk\SebastianFrontEnd\obj\x86\Debug\SebastianFrontEnd.exe
+D:\CBD\trunk\SebastianFrontEnd\obj\x86\Debug\SebastianFrontEnd.pdb
