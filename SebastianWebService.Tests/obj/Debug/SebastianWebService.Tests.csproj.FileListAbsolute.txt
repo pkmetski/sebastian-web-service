@@ -1,0 +1,16 @@
+D:\CBD\Sebastian\SebastianWebService.Tests\bin\Debug\SebastianWebService.Tests.dll.config
+D:\CBD\Sebastian\SebastianWebService.Tests\bin\Debug\SebastianWebService.Tests.dll
+D:\CBD\Sebastian\SebastianWebService.Tests\bin\Debug\SebastianWebService.Tests.pdb
+D:\CBD\Sebastian\SebastianWebService.Tests\bin\Debug\SebastianWebService.dll
+D:\CBD\Sebastian\SebastianWebService.Tests\bin\Debug\SebastianWebService.pdb
+D:\CBD\Sebastian\SebastianWebService.Tests\obj\Debug\ResolveAssemblyReference.cache
+D:\CBD\Sebastian\SebastianWebService.Tests\obj\Debug\SebastianWebService.Tests.dll
+D:\CBD\Sebastian\SebastianWebService.Tests\obj\Debug\SebastianWebService.Tests.pdb
+D:\CBD\trunk\SebastianWebService.Tests\bin\Debug\SebastianWebService.Tests.dll.config
+D:\CBD\trunk\SebastianWebService.Tests\bin\Debug\SebastianWebService.Tests.dll
+D:\CBD\trunk\SebastianWebService.Tests\bin\Debug\SebastianWebService.Tests.pdb
+D:\CBD\trunk\SebastianWebService.Tests\bin\Debug\SebastianWebService.dll
+D:\CBD\trunk\SebastianWebService.Tests\bin\Debug\SebastianWebService.pdb
+D:\CBD\trunk\SebastianWebService.Tests\obj\Debug\ResolveAssemblyReference.cache
+D:\CBD\trunk\SebastianWebService.Tests\obj\Debug\SebastianWebService.Tests.dll
+D:\CBD\trunk\SebastianWebService.Tests\obj\Debug\SebastianWebService.Tests.pdb

@@ -1,0 +1,10 @@
+D:\CBD\Sebastian\SebastianWebService\bin\SebastianWebService.dll
+D:\CBD\Sebastian\SebastianWebService\bin\SebastianWebService.pdb
+D:\CBD\Sebastian\SebastianWebService\obj\Debug\ResolveAssemblyReference.cache
+D:\CBD\Sebastian\SebastianWebService\obj\Debug\SebastianWebService.dll
+D:\CBD\Sebastian\SebastianWebService\obj\Debug\SebastianWebService.pdb
+D:\CBD\trunk\SebastianWebService\bin\SebastianWebService.dll
+D:\CBD\trunk\SebastianWebService\bin\SebastianWebService.pdb
+D:\CBD\trunk\SebastianWebService\obj\Debug\ResolveAssemblyReference.cache
+D:\CBD\trunk\SebastianWebService\obj\Debug\SebastianWebService.dll
+D:\CBD\trunk\SebastianWebService\obj\Debug\SebastianWebService.pdb
