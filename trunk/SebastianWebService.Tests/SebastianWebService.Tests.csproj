@@ -74,11 +74,10 @@
   <ItemGroup>
     <Content Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\SebastianWebService\SebastianWebService.csproj">
-      <Project>{9C77C22A-EEA6-4F8D-9574-DB72F4157FA7}</Project>
-      <Name>SebastianWebService</Name>
+    <ProjectReference Include="..\SebastianWS\SebastianWS.csproj">
+      <Project>{E9636025-3D9A-4FB5-88DD-5352F0C5CF29}</Project>
+      <Name>SebastianWS</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

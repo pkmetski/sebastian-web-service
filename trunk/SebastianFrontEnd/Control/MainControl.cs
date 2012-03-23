@@ -9,7 +9,7 @@ namespace SebastianFrontEnd.Control
     {
         #region Fields
 
-        private static SebastianService.SebastianWebServiceClient client = new SebastianService.SebastianWebServiceClient();
+        private static SebastianService.SebastianWSClient client = new SebastianService.SebastianWSClient();
         private SebastianService.Airport[] airports;
 
         #endregion

@@ -15,7 +15,7 @@ namespace SebastianFrontEnd.SebastianService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Airport", Namespace="http://schemas.datacontract.org/2004/07/SebastianWebService.DTO")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Airport", Namespace="http://schemas.datacontract.org/2004/07/SebastianWS.DTO")]
     [System.SerializableAttribute()]
     public partial class Airport : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -76,7 +76,7 @@ namespace SebastianFrontEnd.SebastianService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Schedule", Namespace="http://schemas.datacontract.org/2004/07/SebastianWebService.DTO")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Schedule", Namespace="http://schemas.datacontract.org/2004/07/SebastianWS.DTO")]
     [System.SerializableAttribute()]
     public partial class Schedule : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -121,7 +121,7 @@ namespace SebastianFrontEnd.SebastianService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Flight", Namespace="http://schemas.datacontract.org/2004/07/SebastianWebService.DTO")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Flight", Namespace="http://schemas.datacontract.org/2004/07/SebastianWS.DTO")]
     [System.SerializableAttribute()]
     public partial class Flight : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -261,43 +261,43 @@ namespace SebastianFrontEnd.SebastianService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="SebastianService.ISebastianWebService")]
-    public interface ISebastianWebService {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="SebastianService.ISebastianWS")]
+    public interface ISebastianWS {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISebastianWebService/GetAllAirports", ReplyAction="http://tempuri.org/ISebastianWebService/GetAllAirportsResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISebastianWS/GetAllAirports", ReplyAction="http://tempuri.org/ISebastianWS/GetAllAirportsResponse")]
         SebastianFrontEnd.SebastianService.Airport[] GetAllAirports();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISebastianWebService/GetSchedule", ReplyAction="http://tempuri.org/ISebastianWebService/GetScheduleResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISebastianWS/GetSchedule", ReplyAction="http://tempuri.org/ISebastianWS/GetScheduleResponse")]
         SebastianFrontEnd.SebastianService.Schedule GetSchedule(SebastianFrontEnd.SebastianService.Airport airport);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISebastianWebService/BookFlight", ReplyAction="http://tempuri.org/ISebastianWebService/BookFlightResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISebastianWS/BookFlight", ReplyAction="http://tempuri.org/ISebastianWS/BookFlightResponse")]
         bool BookFlight(SebastianFrontEnd.SebastianService.Flight flight);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ISebastianWebServiceChannel : SebastianFrontEnd.SebastianService.ISebastianWebService, System.ServiceModel.IClientChannel {
+    public interface ISebastianWSChannel : SebastianFrontEnd.SebastianService.ISebastianWS, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class SebastianWebServiceClient : System.ServiceModel.ClientBase<SebastianFrontEnd.SebastianService.ISebastianWebService>, SebastianFrontEnd.SebastianService.ISebastianWebService {
+    public partial class SebastianWSClient : System.ServiceModel.ClientBase<SebastianFrontEnd.SebastianService.ISebastianWS>, SebastianFrontEnd.SebastianService.ISebastianWS {
         
-        public SebastianWebServiceClient() {
+        public SebastianWSClient() {
         }
         
-        public SebastianWebServiceClient(string endpointConfigurationName) : 
+        public SebastianWSClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public SebastianWebServiceClient(string endpointConfigurationName, string remoteAddress) : 
+        public SebastianWSClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public SebastianWebServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public SebastianWSClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public SebastianWebServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public SebastianWSClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
