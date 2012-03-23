@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a443d72d-26a7-49d6-b29e-c7060827be4b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0ec4ecf0-6efd-442f-9dd2-4e92a45094a4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -18,13 +18,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:2999/WebServices/SebastianWebService.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:26711/WebServices/SebastianWS.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="SebastianWebService.xsd" MetadataType="Schema" ID="dc38c4dc-ad6f-4eaa-a0bf-0d9305bb08f8" SourceId="1" SourceUrl="http://localhost:2999/WebServices/SebastianWebService.svc?xsd=xsd0" />
-    <MetadataFile FileName="SebastianWebService1.xsd" MetadataType="Schema" ID="c54ac091-c120-40d9-81c2-bcaccdfcb542" SourceId="1" SourceUrl="http://localhost:2999/WebServices/SebastianWebService.svc?xsd=xsd1" />
-    <MetadataFile FileName="SebastianWebService.wsdl" MetadataType="Wsdl" ID="5c8eae0d-b445-48d8-9f44-b572d2db6774" SourceId="1" SourceUrl="http://localhost:2999/WebServices/SebastianWebService.svc?wsdl" />
-    <MetadataFile FileName="SebastianWebService2.xsd" MetadataType="Schema" ID="47292d78-00de-45ac-ab6f-10f7f04fcd68" SourceId="1" SourceUrl="http://localhost:2999/WebServices/SebastianWebService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SebastianWS.wsdl" MetadataType="Wsdl" ID="89e1a7df-238f-427d-9ebc-09b9a8048d27" SourceId="1" SourceUrl="http://localhost:26711/WebServices/SebastianWS.svc?wsdl" />
+    <MetadataFile FileName="SebastianWS.xsd" MetadataType="Schema" ID="30eba37f-6c9c-4ac9-8180-0e937af45d8c" SourceId="1" SourceUrl="http://localhost:26711/WebServices/SebastianWS.svc?xsd=xsd1" />
+    <MetadataFile FileName="SebastianWS1.xsd" MetadataType="Schema" ID="d7addc68-09b5-451a-be04-27de53425422" SourceId="1" SourceUrl="http://localhost:26711/WebServices/SebastianWS.svc?xsd=xsd0" />
+    <MetadataFile FileName="SebastianWS2.xsd" MetadataType="Schema" ID="e2e0c924-af72-42d9-a625-867bd82bfe3a" SourceId="1" SourceUrl="http://localhost:26711/WebServices/SebastianWS.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

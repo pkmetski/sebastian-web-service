@@ -2,23 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SebastianWebService.Controller;
+using SebastianWS.Controller;
+using SebastianWS.DTO;
 
 namespace SebastianWebService.Tests
 {
     class MockDataProvider : IDataProvider
     {
-        public DTO.Airport[] GetAllAirports()
+        public Airport[] GetAllAirports()
         {
             throw new NotImplementedException();
         }
 
-        public DTO.Schedule GetSchedule(DTO.Airport airport)
+        public Schedule GetSchedule(Airport airport)
         {
             throw new NotImplementedException();
         }
 
-        public bool ReserveSeat(DTO.Flight flight)
+        public bool ReserveSeat(Flight flight)
         {
             return flight.AvailableSeats > 0;
         }

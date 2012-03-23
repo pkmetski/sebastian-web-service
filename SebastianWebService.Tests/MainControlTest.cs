@@ -1,8 +1,8 @@
-﻿using SebastianWebService.Controller;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
-using SebastianWebService.DTO;
+using SebastianWS.DTO;
+using SebastianWS.Controller;
 
 namespace SebastianWebService.Tests
 {

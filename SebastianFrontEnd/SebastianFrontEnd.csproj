@@ -103,14 +103,14 @@
     <None Include="Service References\SebastianService\SebastianFrontEnd.SebastianService.Schedule.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\SebastianService\SebastianWebService.wsdl" />
-    <None Include="Service References\SebastianService\SebastianWebService.xsd">
+    <None Include="Service References\SebastianService\SebastianWS.wsdl" />
+    <None Include="Service References\SebastianService\SebastianWS.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\SebastianService\SebastianWebService1.xsd">
+    <None Include="Service References\SebastianService\SebastianWS1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\SebastianService\SebastianWebService2.xsd">
+    <None Include="Service References\SebastianService\SebastianWS2.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
