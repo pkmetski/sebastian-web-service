@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using SebastianWebService.DTO;
 
 namespace SebastianWebService.WebServices
 {
@@ -12,6 +13,12 @@ namespace SebastianWebService.WebServices
     public interface ISebastianWebService
     {
         [OperationContract]
-        void DoWork();
+        DTO.Airport[] GetAllAirports();
+
+        [OperationContract]
+        Schedule GetSchedule(DTO.Airport airport);
+
+        [OperationContract]
+        bool BookFlight(DTO.Flight flight);
     }
 }
