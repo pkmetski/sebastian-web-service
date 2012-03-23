@@ -19,7 +19,7 @@ namespace SebastianWS.Controller
         new DTO.Airport(6, "Munich"),
         };
 
-        private DTO.Flight[] staticSchedule= new DTO.Flight[]
+        private DTO.Flight[] staticSchedule = new DTO.Flight[]
         {
         new DTO.Flight(1, airports[0],airports[1],new DateTime(1999,12,21,22,00,00),new DateTime(1999,12,21,23,00,00),100,0),
         new DTO.Flight(2,airports[1],airports[2],new DateTime(2001,05,26,07,00,00),new DateTime(2001,05,26,12,00,00),200,1),
@@ -28,7 +28,7 @@ namespace SebastianWS.Controller
         new DTO.Flight(5,airports[4],airports[5],new DateTime(2004,01,31,20,00,00),new DateTime(2004,01,31,00,00,00),500,12)
         };
 
-        private  DTO.Schedule schedule;
+        private DTO.Schedule schedule;
 
         #endregion
 
@@ -53,15 +53,20 @@ namespace SebastianWS.Controller
 
         public bool ReserveSeat(DTO.Flight flight)
         {
+            bool booked = false;
             for (int i = 0; i < staticSchedule.Length; i++)
             {
                 if (staticSchedule[i].FlightId == flight.FlightId)
                 {
-                    staticSchedule[i].AvailableSeats--;
-                    return true;
+                    if (staticSchedule[i].AvailableSeats > 0)
+                    {
+                        staticSchedule[i].AvailableSeats--;
+                        booked = true;
+                    }
+                    break;
                 }
             }
-            return false;
+            return booked;
         }
     }
 }
