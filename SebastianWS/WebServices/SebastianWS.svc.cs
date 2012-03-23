@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
-using SebastianWS.Controller;
+﻿using SebastianWS.Controller;
 
 namespace SebastianWS.WebServices
 {
@@ -14,9 +8,9 @@ namespace SebastianWS.WebServices
         private static IDataProvider dataProvider = new StaticDataProvider();
         private MainControl ctr = new MainControl(dataProvider);
 
-        public bool BookFlight(DTO.Flight flight)
+        public bool BookFlight(DTO.Flight flight, int numberSeats)
         {
-            return ctr.BookFlight(flight);
+            return ctr.BookFlight(flight, numberSeats);
         }
 
         public DTO.Schedule GetSchedule(DTO.Airport airport)

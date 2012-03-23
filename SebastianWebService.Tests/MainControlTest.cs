@@ -1,8 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
-using SebastianWS.DTO;
 using SebastianWS.Controller;
+using SebastianWS.DTO;
 
 namespace SebastianWebService.Tests
 {
@@ -77,7 +75,7 @@ namespace SebastianWebService.Tests
             Flight flight = new Flight() { AvailableSeats = 1 };
             bool expected = true;
             bool actual;
-            actual = target.BookFlight(flight);
+            actual = target.BookFlight(flight, 1);
             Assert.AreEqual(expected, actual);
         }
 
@@ -89,10 +87,10 @@ namespace SebastianWebService.Tests
         {
             IDataProvider dataProvider = new MockDataProvider();
             MainControl target = new MainControl(dataProvider);
-            Flight flight = new Flight() { AvailableSeats = 0 };
+            Flight flight = new Flight() { AvailableSeats = 1 };
             bool expected = false;
             bool actual;
-            actual = target.BookFlight(flight);
+            actual = target.BookFlight(flight, 2);
             Assert.AreEqual(expected, actual);
         }
     }

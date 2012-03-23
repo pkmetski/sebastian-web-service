@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using SebastianWS.Controller;
 using SebastianWS.DTO;
 
@@ -19,9 +16,9 @@ namespace SebastianWebService.Tests
             throw new NotImplementedException();
         }
 
-        public bool ReserveSeat(Flight flight)
+        public bool Reserve(Flight flight, int numberSeats)
         {
-            return flight.AvailableSeats > 0;
+            return flight.AvailableSeats >= numberSeats;
         }
     }
 }

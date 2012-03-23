@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 namespace SebastianFrontEnd.Control
 {
     class MainControl
@@ -39,7 +35,7 @@ namespace SebastianFrontEnd.Control
 
         public bool BookFlight(SebastianService.Flight flight)
         {
-            return client.BookFlight(flight);
+            return client.BookFlight(flight, 1);
         }
     }
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using SebastianWS.DTO;
+﻿using SebastianWS.DTO;
 
 namespace SebastianWS.Controller
 {
@@ -10,6 +6,6 @@ namespace SebastianWS.Controller
     {
         Airport[] GetAllAirports();
         Schedule GetSchedule(Airport airport);
-        bool ReserveSeat(Flight flight);
+        bool Reserve(Flight flight, int numberSeats);
     }
 }
