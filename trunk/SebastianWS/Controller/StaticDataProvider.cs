@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
 namespace SebastianWS.Controller
 {
@@ -51,16 +49,16 @@ namespace SebastianWS.Controller
                 );
         }
 
-        public bool ReserveSeat(DTO.Flight flight)
+        public bool Reserve(DTO.Flight flight, int numberSeats)
         {
             bool booked = false;
             for (int i = 0; i < staticSchedule.Length; i++)
             {
                 if (staticSchedule[i].FlightId == flight.FlightId)
                 {
-                    if (staticSchedule[i].AvailableSeats > 0)
+                    if (staticSchedule[i].AvailableSeats >= numberSeats)
                     {
-                        staticSchedule[i].AvailableSeats--;
+                        staticSchedule[i].AvailableSeats -= numberSeats;
                         booked = true;
                     }
                     break;

@@ -31,6 +31,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SebastianWS.DTO" minOccurs="0" name="flight" nillable="true" type="q4:Flight" />
+        <xs:element minOccurs="0" name="numberSeats" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

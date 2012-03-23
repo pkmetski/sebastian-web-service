@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using SebastianWS.DTO;
+﻿using SebastianWS.DTO;
 
 namespace SebastianWS.Controller
 {
@@ -25,9 +21,9 @@ namespace SebastianWS.Controller
             return dataProvider.GetSchedule(airport);
         }
 
-        public bool BookFlight(Flight flight)
+        public bool BookFlight(Flight flight, int numberSeats)
         {
-            return dataProvider.ReserveSeat(flight);
+            return dataProvider.Reserve(flight, numberSeats);
         }
     }
 }

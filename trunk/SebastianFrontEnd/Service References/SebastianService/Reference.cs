@@ -8,11 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SebastianFrontEnd.SebastianService {
-    using System.Runtime.Serialization;
-    using System;
-    
-    
+namespace SebastianFrontEnd.SebastianService
+{
+
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Airport", Namespace="http://schemas.datacontract.org/2004/07/SebastianWS.DTO")]
@@ -271,7 +270,7 @@ namespace SebastianFrontEnd.SebastianService {
         SebastianFrontEnd.SebastianService.Schedule GetSchedule(SebastianFrontEnd.SebastianService.Airport airport);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISebastianWS/BookFlight", ReplyAction="http://tempuri.org/ISebastianWS/BookFlightResponse")]
-        bool BookFlight(SebastianFrontEnd.SebastianService.Flight flight);
+        bool BookFlight(SebastianFrontEnd.SebastianService.Flight flight, int numberSeats);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -309,8 +308,8 @@ namespace SebastianFrontEnd.SebastianService {
             return base.Channel.GetSchedule(airport);
         }
         
-        public bool BookFlight(SebastianFrontEnd.SebastianService.Flight flight) {
-            return base.Channel.BookFlight(flight);
+        public bool BookFlight(SebastianFrontEnd.SebastianService.Flight flight, int numberSeats) {
+            return base.Channel.BookFlight(flight, numberSeats);
         }
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
+﻿using System.ServiceModel;
 using SebastianWS.DTO;
 
 namespace SebastianWS.WebServices
@@ -19,6 +14,6 @@ namespace SebastianWS.WebServices
         Schedule GetSchedule(DTO.Airport airport);
 
         [OperationContract]
-        bool BookFlight(DTO.Flight flight);
+        bool BookFlight(DTO.Flight flight, int numberSeats);
     }
 }
